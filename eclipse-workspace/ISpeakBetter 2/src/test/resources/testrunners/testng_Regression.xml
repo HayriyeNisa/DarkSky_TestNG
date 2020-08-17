@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Ispeak Regression Test Suite">
+   <listeners>
+	 <!-- <listener class-name="com.qa.Ispeak.Listeners.ScreenshotListener" /> -->
+	<!-- <listener class-name="com.qa.Ispeak.Listeners.TestAllureListener" /> -->
+	<!-- <listener class-name="com.qa.Ispeak.Listeners.TesultsListener" /> -->
+     <listener class-name="com.qa.Ispeak.Listeners.ExtentReportListener" />
+	</listeners>
+  <parameter name="browser" value="chrome"/>
+  <test name="Ispeak Fuctional Regression Test">
+   
+   <classes>
+      <class name="com.qa.Ispeak.tests.HomePageTest"/>
+     
+      
+      
+    </classes>
+   
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
